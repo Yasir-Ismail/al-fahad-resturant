@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-FAHAD | Premium Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top premium-nav">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">AL-FAHAD</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target="#navbarNav">
+                <i class="fas fa-bars gold-text"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="dashboard.html" class="btn btn-outline-gold btn-sm">Dashboard</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#reservation" class="btn btn-gold">Book a Table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center text-center">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-index-2">
+            <h1 class="hero-title display-1">AL-FAHAD</h1>
+            <p class="hero-tagline lead mb-5">"Where Flavor Meets Perfection."</p>
+            <a href="#menu" class="btn btn-gold btn-lg me-3">Discover Menu</a>
+            <a href="#reservation" class="btn btn-outline-gold btn-lg">Reservation</a>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section id="menu" class="py-5 bg-darker">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="gold-text text-uppercase tracking-widest">Culinary Masterpieces</h5>
+                <h2 class="display-5 text-white font-playfair">Menu Highlights</h2>
+                <div class="ornament mx-auto mt-3"></div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Dish 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card premium-card h-100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Steak">
+                            <div class="price-tag">$45</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title font-playfair gold-text">Wagyu Ribeye</h4>
+                            <p class="card-text text-light-muted">Perfectly seared premium Wagyu beef with truffle mash and asparagus.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dish 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card premium-card h-100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Salmon">
+                            <div class="price-tag">$38</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title font-playfair gold-text">Glazed Salmon</h4>
+                            <p class="card-text text-light-muted">Honey-soy glazed wild-caught salmon on a bed of quinoa salad.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dish 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card premium-card h-100">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pasta">
+                            <div class="price-tag">$28</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title font-playfair gold-text">Truffle Linguine</h4>
+                            <p class="card-text text-light-muted">Handmade pasta tossed in a rich black truffle and parmesan cream sauce.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Why Choose Us -->
+    <section class="py-5 bg-black">
+        <div class="container py-5">
+            <div class="row text-center g-4">
+                <div class="col-md-4 feature-box">
+                    <i class="fas fa-leaf fa-3x gold-text mb-3"></i>
+                    <h4 class="font-playfair text-white">Quality Ingredients</h4>
+                    <p class="text-light-muted">Sourced locally and globally for the freshest, most vibrant flavors.</p>
+                </div>
+                <div class="col-md-4 feature-box">
+                    <i class="fas fa-hat-chef fa-3x gold-text mb-3"></i>
+                    <i class="fa-solid fa-utensils fa-3x gold-text mb-3"></i>
+                    <h4 class="font-playfair text-white">Expert Chefs</h4>
+                    <p class="text-light-muted">World-class culinary artists bringing passion to every plate.</p>
+                </div>
+                <div class="col-md-4 feature-box">
+                    <i class="fas fa-glass-cheers fa-3x gold-text mb-3"></i>
+                    <h4 class="font-playfair text-white">Luxury Experience</h4>
+                    <p class="text-light-muted">An ambiance designed for unforgettable moments and exquisite dining.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 text-center bg-darker">
+        <div class="container">
+            <h2 class="font-playfair gold-text mb-4">AL-FAHAD</h2>
+            <p class="text-light-muted">123 Luxury Avenue, Culinary District, NY 10001</p>
+            <div class="social-icons my-4">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="text-muted small">&copy; 2026 AL-FAHAD Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

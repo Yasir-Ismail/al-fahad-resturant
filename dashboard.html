@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-FAHAD | Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body bg-black text-white">
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-darker sidebar" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 font-playfair gold-text fs-4 border-bottom border-secondary">
+                AL-FAHAD
+            </div>
+            <div class="list-group list-group-flush mt-3">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-white active-link">
+                    <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-light-muted transition-hover">
+                    <i class="fas fa-shopping-cart me-2"></i> Orders
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-light-muted transition-hover">
+                    <i class="fas fa-utensils me-2"></i> Menu
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-light-muted transition-hover">
+                    <i class="fas fa-users me-2"></i> Customers
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-light-muted transition-hover">
+                    <i class="fas fa-chart-line me-2"></i> Analytics
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-light-muted transition-hover mt-5">
+                    <i class="fas fa-cog me-2"></i> Settings
+                </a>
+            </div>
+            <div class="mt-auto p-4 mb-3 text-center">
+                <a href="index.html" class="btn btn-outline-gold btn-sm w-100">Live Site</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-darker border-bottom border-secondary py-3 px-4">
+                <div class="d-flex align-items-center w-100 justify-content-between">
+                    <h4 class="mb-0 font-playfair gold-text">Overview</h4>
+                    <div class="d-flex align-items-center">
+                        <div class="me-3 position-relative">
+                            <i class="fas fa-bell text-light-muted hover-gold"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                        </div>
+                        <img src="https://ui-avatars.com/api/?name=Admin&background=d4af37&color=000" class="rounded-circle" width="35" alt="Admin">
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid p-4">
+                <!-- Stats Row -->
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card stat-card bg-dark border-0 shadow-lg h-100">
+                            <div class="card-body py-4 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-light-muted mb-1">Total Orders</h6>
+                                    <h3 class="mb-0 text-white">1,284</h3>
+                                </div>
+                                <div class="icon-box bg-gold-subtle rounded p-3">
+                                    <i class="fas fa-shopping-bag gold-text fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card stat-card bg-dark border-0 shadow-lg h-100">
+                            <div class="card-body py-4 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-light-muted mb-1">Today's Revenue</h6>
+                                    <h3 class="mb-0 text-white">$4,592</h3>
+                                </div>
+                                <div class="icon-box bg-gold-subtle rounded p-3">
+                                    <i class="fas fa-dollar-sign gold-text fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card stat-card bg-dark border-0 shadow-lg h-100">
+                            <div class="card-body py-4 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-light-muted mb-1">Customers Served</h6>
+                                    <h3 class="mb-0 text-white">8,430</h3>
+                                </div>
+                                <div class="icon-box bg-gold-subtle rounded p-3">
+                                    <i class="fas fa-users gold-text fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card stat-card bg-dark border-0 shadow-lg h-100">
+                            <div class="card-body py-4 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-light-muted mb-1">Top Dish</h6>
+                                    <h3 class="mb-0 text-white fs-5 mt-2">Wagyu Ribeye</h3>
+                                </div>
+                                <div class="icon-box bg-gold-subtle rounded p-3">
+                                    <i class="fas fa-fire gold-text fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Recent Orders -->
+                    <div class="col-lg-8">
+                        <div class="card bg-dark border-0 shadow-lg">
+                            <div class="card-header bg-transparent border-0 pt-4 pb-0 d-flex justify-content-between align-items-center">
+                                <h5 class="gold-text font-playfair mb-0">Recent Orders</h5>
+                                <button class="btn btn-sm btn-outline-light">View All</button>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-dark table-hover table-borderless align-middle custom-table">
+                                        <thead>
+                                            <tr class="text-light-muted border-bottom border-secondary">
+                                                <th>Order ID</th>
+                                                <th>Customer</th>
+                                                <th>Dish</th>
+                                                <th>Amount</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#ORD-0921</td>
+                                                <td>Michael R.</td>
+                                                <td>Truffle Linguine</td>
+                                                <td>$56.00</td>
+                                                <td><span class="badge bg-success-subtle text-success border">Completed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#ORD-0922</td>
+                                                <td>Sarah L.</td>
+                                                <td>Glazed Salmon</td>
+                                                <td>$38.00</td>
+                                                <td><span class="badge bg-warning-subtle text-warning border">Preparing</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#ORD-0923</td>
+                                                <td>James W.</td>
+                                                <td>Wagyu Ribeye</td>
+                                                <td>$90.00</td>
+                                                <td><span class="badge bg-info-subtle text-info border">Pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#ORD-0924</td>
+                                                <td>Emma T.</td>
+                                                <td>Lobster Bisque</td>
+                                                <td>$42.00</td>
+                                                <td><span class="badge bg-success-subtle text-success border">Completed</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Analytics Summary -->
+                    <div class="col-lg-4">
+                        <div class="card bg-dark border-0 shadow-lg h-100">
+                            <div class="card-header bg-transparent border-0 pt-4 pb-0">
+                                <h5 class="gold-text font-playfair mb-0">Sales Targets</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between text-white mb-2">
+                                        <span>Daily Goal</span>
+                                        <span class="gold-text">85%</span>
+                                    </div>
+                                    <div class="progress bg-secondary" style="height: 8px;">
+                                        <div class="progress-bar bg-gold" role="progressbar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between text-white mb-2">
+                                        <span>Weekly Goal</span>
+                                        <span class="gold-text">62%</span>
+                                    </div>
+                                    <div class="progress bg-secondary" style="height: 8px;">
+                                        <div class="progress-bar bg-gold" role="progressbar" style="width: 62%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-between text-white mb-2">
+                                        <span>Monthly Goal</span>
+                                        <span class="gold-text">40%</span>
+                                    </div>
+                                    <div class="progress bg-secondary" style="height: 8px;">
+                                        <div class="progress-bar bg-gold" role="progressbar" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
